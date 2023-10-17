@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Shop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/shop.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Заказ путевки</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="html/about.html">О нас</a>
+                    </li>
+                    <li>
+                        <a href="html/services.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="html/contacts.html">Контакты</a>
+                    </li>
+					
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="font1-bold">Daria Travel</p>
+				<br>
+				<h3><a href="" class="cart-link" data-toggle="modal" data-target="#Cart"> Заказ </a> </h3>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="img/first.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/second.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/ski_resert.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$249</h4>
+                                <h4><a href="" data-toggle="modal" data-target="#FirstGoodModal">Горнолыжный курорт</a>
+                                </h4>
+                                <p>Отправляйтесь на один из горнолыжных курортов Австрии и наслаждайтесь самыми обустроенными трассами Европы.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">15 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/alp.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$649</h4>
+                                <h4><a href="" data-toggle="modal" data-target="#SecondGoodModal">Альпы</a>
+                                </h4>
+                                <p>Альпы - это удивительный горный хребет, расположенный в центральной Европе</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">12 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/mald.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$749</h4>
+                                <h4><a href="" data-toggle="modal" data-target="#ThirdGoodModal">Мальдивы</a>
+                                </h4>
+                                <p>Мальдивские острова – рай для тех, кто хотел бы провести отпуск в уединении.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">31 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/egypt.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$549</h4>
+                                <h4><a href="" data-toggle="modal" data-target="#FourthGoodModal">Египет</a>
+                                </h4>
+                                <p>Жаркое солнце, теплое море и сокровища коралловых рифов делают Египет одним из самых привлекательных направлений для пляжного отдыха. </p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">6 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/thai.jpg" alt="">
+                            <div class="caption">
+                                <h4 class="pull-right">$999</h4>
+                                <h4><a href="" data-toggle="modal" data-target="#FifthGoodModal">Тайланд</a>
+                                </h4>
+                                <p>Таиланд - это удивительная страна в Юго-Восточной Азии.</p>
+                            </div>
+                            <div class="ratings">
+                                <p class="pull-right">18 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+	
+	<div class="modal fade" id="FirstGoodModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Горнолыжный курорт</h4>
+      </div>
+      <div class="modal-body">
+	  <img src="img/ski_resert.jpg" width="300" height="200" >
+        <p>Отправляйтесь на один из альпийских курортов Австрии и наслаждайтесь самыми обустроенными трассами Европы. 
+          Посмотрите на Доломитовые Альпы – самые красивые горы Италии, откройте для себя новые трассы Пиренеев, 
+          научитесь кататься в Родопах или Рильских горах Болгарии, посетите знаменитые курорты Грузии и России! &hellip;</p>
+		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> Добавить в корзину </button>
+		<div class="add-to-busket-block">
+			<button class="btn-primary btn-minus">-</button>
+			<input class="form-control count-input" />
+			<button class="btn-primary btn-plus">+</button>
+			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-1"></span></button>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="SecondGoodModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Альпы</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/alp.jpg" width="300" height="200" >
+        <p>Альпы - это удивительный горный хребет, расположенный в центральной Европе, простирающийся через несколько стран, включая Францию, Италию, Швейцарию, Австрию и Германию. 
+          Этот живописный регион предлагает невероятные возможности для активного отдыха и природных красот. &hellip;</p> 
+		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> Добавить в корзину </button>
+		<div class="add-to-busket-block">
+			<button class="btn-primary btn-minus">-</button>
+			<input class="form-control count-input" />
+			<button class="btn-primary btn-plus">+</button>
+			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-2"></span></button>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+	<div class="modal fade" id="ThirdGoodModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Мальдивы</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/mald.jpg" width="300" height="200" >
+        <p>Мальдивские острова – рай для тех, кто хотел бы провести отпуск в уединении. 
+          Молодожены и романтические пары едут сюда, чтобы оказаться в земном раю. Влюбленные в дайвинг находят на Мальдивах невероятное разнообразие подводного мира.
+           И только любителям гор здесь делать нечего… Впрочем, прекрасные СПА, веселые вечеринки и мастерство местных шеф-поваров увлекут любого туриста. &hellip;</p>
+		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> Добавить в корзину </button>
+		<div class="add-to-busket-block">
+			<button class="btn-primary btn-minus">-</button>
+			<input class="form-control count-input" />
+			<button class="btn-primary btn-plus">+</button>
+			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-3"></span></button>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="FourthGoodModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Египет</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/egypt.jpg" width="300" height="200" >
+        <p>Жаркое солнце, теплое море и сокровища коралловых рифов делают Египет одним из самых привлекательных направлений для пляжного отдыха. 
+          Несколько часов полета – и вы окажетесь на берегу Красного моря. Здесь есть современные шумные курорты – Шарм-эль-Шейх и Хургада,
+           уединенные Макади Бэй и Марса-Алам, спортивные «мекки» для серферов и кайтеров – Сафага, Таба, Дахаб.&hellip;</p>
+		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> Добавить в корзину </button>
+		<div class="add-to-busket-block">
+			<button class="btn-primary btn-minus">-</button>
+			<input class="form-control count-input" />
+			<button class="btn-primary btn-plus">+</button>
+			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-4"></span></button>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="FifthGoodModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Тайланд</h4>
+      </div>
+      <div class="modal-body">
+        <img src="img/thai.jpg" width="300" height="200" >
+        <p>Таиланд - это удивительная страна в Юго-Восточной Азии, известная своей красочной культурой, потрясающими пляжами и вкусной кухней.
+          Таиланд богат разнообразной культурой и историей.
+           Посетите храмы, такие как Великий дворец в Бангкоке и храм Ват Пхо с известной статуей Лежащего Будды.
+            Узнайте о традиционном тайском искусстве, музыке и танцах. &hellip;</p>
+		<button class="btn-primary add-to-busket-btn"><span class="glyphicon glyphicon-shopping-cart"></span> Добавить в корзину </button>
+		<div class="add-to-busket-block">
+			<button class="btn-primary btn-minus">-</button>
+			<input class="form-control count-input" />
+			<button class="btn-primary btn-plus">+</button>
+			<button class="btn-success"><span class="glyphicon glyphicon-ok ok-5"></span></button>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<div class="modal fade" id="Cart">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Корзина</h4>
+      </div>
+      <div class="modal-body cart-body">
+	
+      </div>
+      <div class="modal-footer">
+	  		<button type="button" class="btn btn-default btn-close" OnClick="clearCart(); $('.cart-body').html('');"> Очистить </button>
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary btn-order">Заказ</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+    
+
+</body>
+
+</html>
